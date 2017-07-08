@@ -1,0 +1,152 @@
+/*
+ Theme Name:     Bow Child
+Theme URI: http://www.themesawesome.com
+ Description:    Bow Child Theme
+Author: Themes Awesome
+Author URI: http://www.themesawesome.com
+ Template:       bow
+ Version:        1.0.0
+*/
+
+@import url("../bow/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Karla|Muli|NTR|PT+Sans|Quicksand|Work+Sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #8c8d8d;
+        margin-bottom: 20px; 
+        font-weight: bold;
+}
+
+.header {
+        padding: 24px 50px 60px;
+}
+
+.offset {
+        padding: 97px 50px 100px;
+}
+
+.work-mansonry .navigate li {
+        margin-bottom: 5px;
+}
+
+.work-mansonry .navigate li a {
+        font-size: 9px;
+        text-transform: uppercase;
+        color: #8c8d8d;
+        font-family: 'Poppins', sans-serif;
+}
+
+.header .logo {
+        width: 125px;
+}
+
+.img-hold {
+        width: 100%;
+        height: auto;
+}
+
+.img-hold img {
+        width: 100%;
+        height: auto;
+}
+
+.about-me .img-hold {
+        width: 35%;
+        float: right;
+        margin: 0 0 25px 25px;
+}
+
+.foliobox .img-hold {
+        position: relative;
+}
+
+.foliobox .img-hold .info-icon {
+        position: absolute;
+        bottom: 19px;
+        right: 10px;
+        z-index: 99999;
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        background-color: #ccc;
+        text-align: center;
+        color: #000;
+        font-size: 10px;
+        line-height: 21px;
+        cursor: pointer;
+}
+
+.foliobox .img-hold .hover-content-section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        background-color: rgba(0,0,0,0.6);
+        text-align: center;
+        padding: 20px;
+        opacity: 0;
+}
+
+.foliobox .img-hold .hover-content-section.active {
+        opacity: 1;
+}
+
+.foliobox .img-hold .hover-content-section p {
+        margin: 0;
+        text-align: center;
+        color: #fff;
+}
+
+.footer {
+        max-width: 220px;
+}
+
+.footer .link {
+        letter-spacing: 0.1em;
+        color: #8c8d8d !important;
+        font-size: 12px;
+}
+
+.navigation .menu li {
+        font-size: 20px;
+        line-height: 25px;
+}
+
+.homepage .discover {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-indent: -9999px;
+        background-image: none;
+}
+
+.homepage .title {
+        margin-bottom: 0;
+        line-height: 60px;
+}
+
+ul.social-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+}
+
+ul.social-list li {
+        float: left;
+        margin-left: 20px;
+}
+
+ul.social-list li:first-child {
+        margin-left: 0;
+}
