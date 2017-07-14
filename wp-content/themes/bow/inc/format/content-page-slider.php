@@ -21,7 +21,8 @@ $images = get_children( array(
 				<?php 
 				foreach ( $test2 as $attachment_id ): 
 				$imageurl = wp_get_attachment_url( $attachment_id );
-				$link = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
+				// $link = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
+				$link = get_home_url(); 
 				$attachment = get_post($attachment_id, false);			
 				?>
 				<li class="slide" data-url="<?php echo esc_url( $imageurl ); ?>">
