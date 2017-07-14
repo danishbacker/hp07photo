@@ -68,12 +68,12 @@
 //     $('.work-mansonry .image').stop().animate({ opacity: "1" }, 'slow');
 //   }); 
 
-// $('.info-icon').click(function(){
+$('.info-icon').click(function(){
 
-// 	//alert('test');
-// 	$(this).next(".hover-content-section").addClass("active");
+	//alert('test');
+	$(this).next(".hover-content-section").fadeToggle();
 
-// });
+});
 
   //Work
   jQuery( document ).on( "click", ".portfolio-list div.image", function() {

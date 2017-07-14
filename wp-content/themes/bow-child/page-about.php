@@ -26,7 +26,7 @@ wp_enqueue_script( 'bow-work-mansory', BOW_DIR. '/js/work-mansory.js', array( 'j
 	        foreach ( $cat_lists as $cat_list ) {
 	           	$category_name = $cat_list->name;
 		        $category_slug = $cat_list->slug;
-		            echo '<li><a data-filter=".'. sanitize_text_field( $category_slug ) .'" href="#">' . sanitize_text_field( $category_name ) . '</a></li>';
+		            echo '<li><a data-filter=".'. sanitize_text_field( $category_slug ) .'" href="'. sanitize_text_field( $category_slug ) .'">' . sanitize_text_field( $category_name ) . '</a></li>';
 	            
 	        }  
 

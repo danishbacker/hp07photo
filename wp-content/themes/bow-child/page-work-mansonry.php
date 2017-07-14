@@ -25,7 +25,7 @@ wp_enqueue_script( 'bow-work-mansory', BOW_DIR. '/js/work-mansory.js', array( 'j
 	        foreach ( $cat_lists as $cat_list ) {
 	           	$category_name = $cat_list->name;
 		        $category_slug = $cat_list->slug;
-		            echo '<li><a data-filter=".'. sanitize_text_field( $category_slug ) .'" href="#">' . sanitize_text_field( $category_name ) . '</a></li>';
+		            echo '<li><a data-filter=".'. sanitize_text_field( $category_slug ) .'" href="'. sanitize_text_field( $category_slug ) .'">' . sanitize_text_field( $category_name ) . '</a></li>';
 	            
 	        }  
 
@@ -75,17 +75,23 @@ wp_enqueue_script( 'bow-work-mansory', BOW_DIR. '/js/work-mansory.js', array( 'j
 
 
 							
-					
-	<div class="image foliobox active <?php echo sanitize_text_field( $category_slug ); ?>" data-type="<?php echo sanitize_text_field( $category_slug ); ?>" data-url="<?php echo esc_url( $img_url[0] ); ?>" <?php if($data) { ?> data-description="<?php echo sanitize_text_field( $data ); ?>" <?php } ?>  data-caption="<?php the_title(); ?>" data-album="<?php echo esc_attr( $term->name ); ?>" data-width="<?php echo esc_attr( $meta['width'] ); ?>" data-height="<?php echo esc_attr( $meta['height'] ); ?>" data-video="<?php echo esc_url( $video ); ?>">
-		<div class="img-hold">
-		<img src="<?php echo esc_url( $img_url2[0] ); ?>" alt="<?php the_title(); ?>">
-		<span class="info-icon">i</span>
+	<div class="work-image-container image foliobox">
+
+		<div class="image active <?php echo sanitize_text_field( $category_slug ); ?>" data-type="<?php echo sanitize_text_field( $category_slug ); ?>" data-url="<?php echo esc_url( $img_url[0] ); ?>" <?php if($data) { ?> data-description="<?php echo sanitize_text_field( $data ); ?>" <?php } ?>  data-caption="<?php the_title(); ?>" data-album="<?php echo esc_attr( $term->name ); ?>" data-width="<?php echo esc_attr( $meta['width'] ); ?>" data-height="<?php echo esc_attr( $meta['height'] ); ?>" data-video="<?php echo esc_url( $video ); ?>">
+			<div class="img-hold">
+			<img src="<?php echo esc_url( $img_url2[0] ); ?>" alt="<?php the_title(); ?>">
+			</div>
+		</div>
+
+		<span class="info-icon">
+			<i class="fa fa-info" aria-hidden="true"></i>
+		</span>
 		<div class="hover-content-section">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tenetur quae perferendis, ullam eligendi amet.
 			</p>
 		</div>
-		</div>
+
 	</div>
 
 			<?php endwhile; ?>
