@@ -70,4 +70,4 @@ wp-content/*
 # ignore node/grunt dependency directories
 node_modules/
 
-wp-config.php
+#wp-config.php
