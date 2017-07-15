@@ -26,7 +26,7 @@
           queue: false,
         }
       });
-      return false;
+      return true;
     });
 
     var $optionSets = $('#options'),
@@ -286,6 +286,13 @@ function openImage2(image) {
 }
 
 
+$('ul.navigation-new-list > li').hover(function () {
+    // alert('pn');
+    $(this).find('.drop-down-container').stop().slideDown("slow");
+
+}, function(){
+    $(this).find('.drop-down-container').stop().slideUp("slow");
+});
 
 
 

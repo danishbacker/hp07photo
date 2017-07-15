@@ -669,3 +669,5 @@ jQuery(document).ready(function($) {
 // 	$(this).next("div.hover-content-section").addClass("active");
 
 // });
+
+
